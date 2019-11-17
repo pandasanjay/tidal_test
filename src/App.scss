@@ -1,0 +1,65 @@
+@import './config';
+body {
+    background: $primary-color;
+    font-size: $font-size;
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex {
+    margin: $margin;
+}
+
+.position-relative {
+    position: relative;
+}
+@mixin col-x {
+    @for $i from 1 through $columns {
+        .col-#{$i} { 
+          grid-template-columns: frepeat("auto", $i) !important
+        }
+    }
+    }
+    
+@include col-x;
+
+@mixin pad-x {
+    @for $i from 1 through $padding-length {
+        .pad-#{$i} { 
+          padding: calculateRemDynamic($i) 
+        }
+        .pad-l-#{$i} { 
+            padding-left: calculateRemDynamic($i) 
+        }
+        .pad-r-#{$i} { 
+            padding-right: calculateRemDynamic($i) 
+        }
+        .pad-t-#{$i} { 
+            padding-top: calculateRemDynamic($i) 
+        }
+        .pad-b-#{$i} { 
+            padding-bottom: calculateRemDynamic($i) 
+        }
+    }
+    }
+    
+@include pad-x;
+
+@mixin flex-grow-x {
+    @for $i from 1 through $padding-length {
+        .flex-grow-#{$i} { 
+            flex-grow: $i
+        }
+        
+    }
+    }
+    
+@include flex-grow-x;

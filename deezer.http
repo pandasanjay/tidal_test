@@ -1,0 +1,12 @@
+https://api.deezer.com/search?q=Prince
+Content-Type: application/json
+
+
+###
+https://api.deezer.com/search?q=album:"good"
+Content-Type: application/json
+
+###
+
+https://api.deezer.com/album/115395012
+Content-Type: application/json
