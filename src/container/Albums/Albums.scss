@@ -4,6 +4,7 @@
   h4 {
     padding: $padding 0;
     border-bottom: 1px solid $separator-color;
+    font-weight: 400;
   }
 }
 .scroll {
@@ -26,25 +27,4 @@
   &.active {
     border-bottom: 1px solid $separator-color;
   }
-}
-
-.album-img {
-  position: absolute;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-}
-.hide-section {
-  position: absolute;
-  height: 95px;
-  background: $primary-color;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.field-section {
-  width: 120px;
-  position: relative;
-  padding: $padding;
-  background: $highlight-color;
 }

@@ -1,6 +1,14 @@
 import React from "react";
+import { connect } from "react-redux";
+
 import Autocomplete from "./Autocomplete";
 import "./SearchBar.scss";
+
+import mapDispatchToProps from "../../redux/actions";
+const mapStateToProps = state => ({
+  ...state
+});
+
 const SearchBar = props => {
   const handelOnChange = evt => {
     props.searchAction(evt.target.value);
@@ -17,7 +25,7 @@ const SearchBar = props => {
               onChange={handelOnChange}
             />
             <Autocomplete
-              list={props.appReducer.autocomplete}
+              list={props.app.autocomplete}
               onClickAction={props.findAlbumOfArtist}
             />
           </span>
@@ -27,4 +35,4 @@ const SearchBar = props => {
     </>
   );
 };
-export default SearchBar;
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

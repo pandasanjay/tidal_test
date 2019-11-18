@@ -5,7 +5,7 @@ import Column from "./components/layouts/Column/Column";
 import Grid from "./components/layouts/Grid/Grid";
 import Row from "./components/layouts/Row/Row";
 import SearchBar from "./container/SearchBar/SearchBar";
-import AlbumList from "./container/AlbumList/AlbumList";
+import Albums from "./container/Albums/Albums";
 
 import mapDispatchToProps from "./redux/actions";
 const mapStateToProps = state => ({
@@ -17,12 +17,12 @@ function App(props) {
     <Grid>
       <Row>
         <Column>
-          {" "}
-          <SearchBar {...props} />{" "}
+          <SearchBar />
         </Column>
+      </Row>
+      <Row>
         <Column>
-          {" "}
-          {props.appReducer.albums ? <AlbumList {...props} /> : <></>}{" "}
+          <Albums />
         </Column>
       </Row>
     </Grid>

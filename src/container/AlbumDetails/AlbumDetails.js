@@ -1,5 +1,8 @@
 import React from "react";
 import { fmtMSS } from "../../utils/functionUtils";
+
+import "./AlbumDetails.scss";
+
 const AlbumDetails = ({ details = {} }) => {
   return Object.keys(details).length ? (
     <>
