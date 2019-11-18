@@ -1,65 +1,95 @@
-@import './config';
+@import "./config";
 body {
-    background: $primary-color;
+  background: $primary-color;
+  font-size: $font-size;
+  color: $text-color;
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h2,
+  h4 {
     font-size: $font-size;
-    ul {
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
+    margin: 0px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: $font-size-small;
+    th {
+      text-align: left;
+      padding: $padding 0;
     }
+    tbody {
+      background-color: $highlight-color;
+    }
+    td {
+      background-color: $highlight-color;
+      padding: $padding 0;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
 }
 
 .flex-container {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .flex {
-    margin: $margin;
+  margin: $margin;
 }
 
 .position-relative {
-    position: relative;
+  position: relative;
 }
-@mixin col-x {
-    @for $i from 1 through $columns {
-        .col-#{$i} { 
-          grid-template-columns: frepeat("auto", $i) !important
-        }
-    }
-    }
-    
-@include col-x;
+.text-center {
+  text-align: center;
+}
+.title-text {
+  color: $secondary-color;
+}
+.title-text-sm {
+  font-size: $font-size-small;
+  color: $secondary-color;
+}
+.no-margin {
+  margin: 0;
+}
 
 @mixin pad-x {
-    @for $i from 1 through $padding-length {
-        .pad-#{$i} { 
-          padding: calculateRemDynamic($i) 
-        }
-        .pad-l-#{$i} { 
-            padding-left: calculateRemDynamic($i) 
-        }
-        .pad-r-#{$i} { 
-            padding-right: calculateRemDynamic($i) 
-        }
-        .pad-t-#{$i} { 
-            padding-top: calculateRemDynamic($i) 
-        }
-        .pad-b-#{$i} { 
-            padding-bottom: calculateRemDynamic($i) 
-        }
+  @for $i from 1 through $padding-length {
+    .pad-#{$i} {
+      padding: calculateRemDynamic($i);
     }
+    .pad-l-#{$i} {
+      padding-left: calculateRemDynamic($i);
     }
-    
+    .pad-r-#{$i} {
+      padding-right: calculateRemDynamic($i);
+    }
+    .pad-t-#{$i} {
+      padding-top: calculateRemDynamic($i);
+    }
+    .pad-b-#{$i} {
+      padding-bottom: calculateRemDynamic($i);
+    }
+  }
+}
+
 @include pad-x;
 
 @mixin flex-grow-x {
-    @for $i from 1 through $padding-length {
-        .flex-grow-#{$i} { 
-            flex-grow: $i
-        }
-        
+  @for $i from 1 through $padding-length {
+    .flex-grow-#{$i} {
+      flex-grow: $i;
     }
-    }
-    
+  }
+}
+
 @include flex-grow-x;

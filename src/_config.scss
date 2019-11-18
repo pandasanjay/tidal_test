@@ -1,15 +1,23 @@
 @import "./_function.scss";
 
-$primary-color : #1C1C1C;
-$secondary-color : #01FFFD;
+$primary-color: #1c1c1c;
+$secondary-color: #01fffd;
 $highlight-color: #232323;
-$highlight-text-color: #8A8A8A;
-$text-color: #FFFFFF;
+$highlight-text-color: #8a8a8a;
+$separator-color: #2a2a2a;
+$text-color: #ffffff;
 
+//Light theme
+// $primary-color : #f5f0f0;
+// $secondary-color : #b3abde;
+// $highlight-color: #e2d2d2;
+// $highlight-text-color: #8A8A8A;
+// $separator-color: #e2d2d2;
+// $text-color: #b77d7d;
 
 $columns: 12;
 $padding-length: 20;
-$font-size-small: calculateRem(14px);
+$font-size-small: calculateRem(12px);
 $font-size: calculateRem(16px);
 $padding: calculateRem(10px);
 $margin: calculateRem(10px);

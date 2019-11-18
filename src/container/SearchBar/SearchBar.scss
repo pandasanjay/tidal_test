@@ -1,0 +1,53 @@
+@import "../../config";
+
+.search-bar-section {
+  .search-input-box {
+    padding: $padding;
+    background: $highlight-color;
+    border: none;
+    font-size: $font-size;
+    border-radius: calculateRem(2px);
+    color: $text-color;
+    width: calc(100% - (#{$padding} * 2));
+  }
+  .search-bar-button-search {
+    margin: $margin;
+    padding: $padding calculateRem(20px);
+    font-size: $font-size;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: calculateRem(2px);
+    text-transform: uppercase;
+  }
+}
+
+.auto-complete-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: $padding;
+  background: $highlight-color;
+  margin: $margin 0;
+  font-size: $font-size-small;
+  color: $highlight-text-color;
+  border-radius: calculateRem(2px);
+  &::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $highlight-color;
+    position: absolute;
+    top: calculateRem(-8px);
+    left: calculateRem(45px);
+  }
+  .auto-complete-list {
+    padding: $padding;
+    li {
+      padding: calculateRem(5px) calculateRem(20px);
+      border-bottom: 1px solid $primary-color;
+      cursor: pointer;
+    }
+  }
+}

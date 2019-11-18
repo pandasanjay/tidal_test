@@ -1,0 +1,50 @@
+@import "../../config";
+.search-result-album-section {
+  padding: $padding;
+  h4 {
+    padding: $padding 0;
+    border-bottom: 1px solid $separator-color;
+  }
+}
+.scroll {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.album-section {
+  width: 125px;
+  cursor: pointer;
+  &:nth-child(1) {
+    margin-left: 0px;
+  }
+  &:active,
+  &.active {
+    border-bottom: 1px solid $separator-color;
+  }
+}
+
+.album-img {
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+}
+.hide-section {
+  position: absolute;
+  height: 95px;
+  background: $primary-color;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.field-section {
+  width: 120px;
+  position: relative;
+  padding: $padding;
+  background: $highlight-color;
+}
