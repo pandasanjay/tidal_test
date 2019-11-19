@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumDetails connected component  should render and check the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="album-details-section flex-container"
+  >
+    <div
+      class="flex no-margin field-section"
+    >
+      <img
+        alt="sss"
+        class="album-img"
+        src="https://api.deezer.com/album/99754012/image"
+      />
+      <div
+        class="hide-section"
+      />
+    </div>
+    <div
+      class="flex flex-grow-8 no-margin"
+    >
+      <div
+        class="title-text pad-t-10 pad-b-10"
+      >
+        foo
+      </div>
+      <div
+        lists=""
+        releaseyear="2019"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

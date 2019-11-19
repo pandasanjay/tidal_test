@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="search-bar-section"
+  >
+    <div
+      class="flex-container"
+    >
+      <span
+        class="flex flex-grow-8 position-relative"
+      >
+        <input
+          class="search-input-box"
+          placeholder="Search here"
+          type="text"
+        />
+      </span>
+      <button
+        class="search-bar-button-search"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

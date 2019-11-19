@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumDetails connected component  should render and check the snapshot 1`] = `
+<DocumentFragment>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Title
+        </th>
+        <th>
+          Artist
+        </th>
+        <th>
+          Time
+        </th>
+        <th>
+          Released
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          foo
+        </td>
+        <td>
+          bar
+        </td>
+        <td>
+          7:02
+        </td>
+        <td>
+          2019
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

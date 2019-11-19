@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-const Album = ({ list = [], onSelectAlbum = () => {} }) => {
+const Album = ({ list = [], onChange = () => {} }) => {
   const [active, setActive] = useState("");
   const handelClick = id => {
     setActive(id);
-    onSelectAlbum(id);
+    onChange(id);
   };
   return (
     <>

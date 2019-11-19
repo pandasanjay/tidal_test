@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import Autocomplete from "./Autocomplete";
+import Autocomplete from "../../components/Autocomplete/Autocomplete";
 import "./SearchBar.scss";
 
 import mapDispatchToProps from "../../redux/actions";

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumDetails connected component  should render and check the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-container scroll"
+  />
+</DocumentFragment>
+`;
